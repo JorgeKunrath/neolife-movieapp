@@ -1,0 +1,52 @@
+
+
+/*------------------------------------------------------------------------
+GERAL E VARIÁVEIS
+------------------------------------------------------------------------*/ 
+
+// $bk: #cccccc;
+// $light: #eeeeee;
+// $shadow: #aaaaaa;
+$bk: #d4d4d4;
+$light: rgba(255,255,255,0.8);
+$shadow: rgba(0,0,0,0.4);
+
+
+
+p {
+    margin: 20px;
+    padding: 30px;
+    cursor: pointer;
+    // color: white;
+}
+
+.nmp {
+    border-radius: 5px;
+    box-shadow: -4px -4px 20px $light, 4px 4px 20px $shadow, 1px 1px 2px 1px $shadow, -1px -1px 2px 1px $light;
+    transition: box-shadow 0.2s ease-in;
+
+    &:focus, &:hover {
+        box-shadow: -2px -2px 3px $light, 2px 2px 5px $shadow;
+    }
+    &:active {
+        box-shadow: inset -2px -2px 4px $light, inset 2px 2px 4px $shadow;
+        background: #3b47ad;
+        color: white;
+    }
+}
+
+
+
+
+/*------------------------------------------------------------------------
+TIPOGRAFIA
+------------------------------------------------------------------------*/ 
+
+
+body {
+    font-family: sans-serif;
+    background: $bk;
+}
+
+
+

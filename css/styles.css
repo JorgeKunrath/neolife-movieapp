@@ -1,4 +1,66 @@
+@charset "UTF-8";
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*------------------------------------------------------------------------
+GERAL E VARIÁVEIS
+------------------------------------------------------------------------*/
+p {
+  margin: 20px;
+  padding: 30px;
+  cursor: pointer;
+}
+
+.nmp {
+  border-radius: 5px;
+  -webkit-box-shadow: -4px -4px 20px rgba(255, 255, 255, 0.8), 4px 4px 20px rgba(0, 0, 0, 0.4), 1px 1px 2px 1px rgba(0, 0, 0, 0.4), -1px -1px 2px 1px rgba(255, 255, 255, 0.8);
+          box-shadow: -4px -4px 20px rgba(255, 255, 255, 0.8), 4px 4px 20px rgba(0, 0, 0, 0.4), 1px 1px 2px 1px rgba(0, 0, 0, 0.4), -1px -1px 2px 1px rgba(255, 255, 255, 0.8);
+  -webkit-transition: -webkit-box-shadow 0.2s ease-in;
+  transition: -webkit-box-shadow 0.2s ease-in;
+  transition: box-shadow 0.2s ease-in;
+  transition: box-shadow 0.2s ease-in, -webkit-box-shadow 0.2s ease-in;
+}
+
+.nmp:focus, .nmp:hover {
+  -webkit-box-shadow: -2px -2px 3px rgba(255, 255, 255, 0.8), 2px 2px 5px rgba(0, 0, 0, 0.4);
+          box-shadow: -2px -2px 3px rgba(255, 255, 255, 0.8), 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.nmp:active {
+  -webkit-box-shadow: inset -2px -2px 4px rgba(255, 255, 255, 0.8), inset 2px 2px 4px rgba(0, 0, 0, 0.4);
+          box-shadow: inset -2px -2px 4px rgba(255, 255, 255, 0.8), inset 2px 2px 4px rgba(0, 0, 0, 0.4);
+  background: #3b47ad;
+  color: white;
+}
+
+/*------------------------------------------------------------------------
+TIPOGRAFIA
+------------------------------------------------------------------------*/
 body {
-  background: tan;
+  font-family: sans-serif;
+  background: #d4d4d4;
 }
 /*# sourceMappingURL=styles.css.map */
