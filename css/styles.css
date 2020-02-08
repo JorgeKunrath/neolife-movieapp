@@ -59,17 +59,17 @@ html {
 }
 
 .light:focus, .light:hover, .light.active {
-  background: #d8521d;
+  background: #3c1c86;
 }
 
 .light:focus::before, .light:hover::before, .light.active::before {
-  -webkit-box-shadow: -3px -3px 6px rgba(255, 255, 255, 0.04), 3px 3px 6px rgba(0, 0, 0, 0.2), 0 0 80px -10px #d8521d;
-          box-shadow: -3px -3px 6px rgba(255, 255, 255, 0.04), 3px 3px 6px rgba(0, 0, 0, 0.2), 0 0 80px -10px #d8521d;
+  -webkit-box-shadow: -3px -3px 6px rgba(255, 255, 255, 0.04), 3px 3px 6px rgba(0, 0, 0, 0.2), 0 0 80px -10px #3c1c86;
+          box-shadow: -3px -3px 6px rgba(255, 255, 255, 0.04), 3px 3px 6px rgba(0, 0, 0, 0.2), 0 0 80px -10px #3c1c86;
   z-index: 2;
 }
 
 .light:active {
-  background: #e46635;
+  background: #4922a4;
 }
 
 .category, .movieList {
@@ -149,6 +149,8 @@ PÁGINA INICIAL
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
+  text-align: center;
+  line-height: 1.5;
 }
 
 .movieList__cover img {
@@ -163,9 +165,31 @@ PÁGINA INICIAL
      object-fit: cover;
 }
 
+.movieList__cover img:before {
+  content: "";
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  width: 80%;
+  height: auto;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.movieList__cover img:after {
+  content: "imagem não encontrada";
+  position: absolute;
+  left: 10%;
+  bottom: 5%;
+  width: 80%;
+  height: auto;
+  font-size: 80%;
+  opacity: 0.3;
+}
+
 .movieList__cover:focus, .movieList__cover:hover, .movieList__cover.active {
-  -webkit-box-shadow: -3px -3px 6px rgba(255, 255, 255, 0.04), 3px 3px 6px rgba(0, 0, 0, 0.2), 0 0 80px -10px #d8521d;
-          box-shadow: -3px -3px 6px rgba(255, 255, 255, 0.04), 3px 3px 6px rgba(0, 0, 0, 0.2), 0 0 80px -10px #d8521d;
+  -webkit-box-shadow: -3px -3px 6px rgba(255, 255, 255, 0.04), 3px 3px 6px rgba(0, 0, 0, 0.2), 0 0 80px -10px #3c1c86;
+          box-shadow: -3px -3px 6px rgba(255, 255, 255, 0.04), 3px 3px 6px rgba(0, 0, 0, 0.2), 0 0 80px -10px #3c1c86;
   -webkit-transform: scale(1.01);
           transform: scale(1.01);
   z-index: 2;

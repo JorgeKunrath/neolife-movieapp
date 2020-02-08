@@ -18,9 +18,9 @@ $shadowHover: 3px 3px 6px rgba(0,0,0,0.2);
 $lightColor: #b46028;
 $lightColor: #af4a51;
 $lightColor: #d8521d;
-// $lightColor: #078159;
-// $lightColor: #058158;
-// $lightColor: #3c1c86;
+$lightColor: #078159;
+$lightColor: #058158;
+$lightColor: #3c1c86;
 // $lightColor: #0372a5;
 $lightStrong:  0 0 80px -10px $lightColor;
 // $nmpGradient: linear-gradient(145deg, #282933, #21222b);
@@ -143,6 +143,8 @@ PÁGINA INICIAL
 		overflow: hidden;
 		box-shadow: 0 0 10px rgba(0,0,0,0.3);
 		transition: all 0.3s ease-out;
+		text-align: center;
+		line-height: 1.5;
 		img {
 			position: absolute;
 			top: 50%;
@@ -151,6 +153,26 @@ PÁGINA INICIAL
 			min-height: 100%;
 			transform: translate(-50%, -50%);
 			object-fit: cover;
+			&:before {
+				content: "";
+				position: absolute;
+				left: 10%;
+				top: 50%;
+				width: 80%;
+				height: auto;
+				transform: translateY(-50%);
+				// border: 2px solid red;
+			}
+			&:after {
+				content: "imagem não encontrada";
+				position: absolute;
+				left: 10%;
+				bottom: 5%;
+				width: 80%;
+				height: auto;
+				font-size: 80%;
+				opacity: 0.3;
+			}
 		}
 
 		&:focus, &:hover, &.active {
